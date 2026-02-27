@@ -1,8 +1,5 @@
 services:
   portfolio:
-    build:
-      context: .
-      dockerfile: Dockerfile
     image: harriputtar/portfolio-app:latest
     container_name: portfolio-app
     ports:
