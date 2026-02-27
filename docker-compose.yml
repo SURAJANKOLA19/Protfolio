@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: portfolio-app:latest
+    image: harriputtar/portfolio-app:latest
     container_name: portfolio-app
     ports:
       - "8080:80"
