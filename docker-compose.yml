@@ -1,8 +1,10 @@
 services:
   portfolio:
-    image: ${IMAGE:-yourdockerhubusername/portfolio-app:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: portfolio-app:latest
     container_name: portfolio-app
     ports:
       - "8080:80"
     restart: unless-stopped
-    
